@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=200&section=header&text=MochiGo%20E-Commerce&fontSize=50&fontAlignY=35&animation=twinkling" width="100%" />
 
@@ -68,3 +68,22 @@ Chỉ với 4 bước đơn giản để tự build hệ thống tại máy củ
 > **1. Tải source code**
 ```bash
 git clone https://github.com/MDuong2005/MochiGo-ECommerce-Platform.git
+```
+
+> **2. Cài đặt Cơ sở dữ liệu:**
+   - Mở SQL Server Management Studio (SSMS).
+   - Chạy file script SQL `MochiGoDB.sql` để tạo database.
+   - Đảm bảo đã bật kết nối TCP/IP port `1433` trong SQL Server Configuration Manager.
+
+> **3. Cấu hình thông tin (Credentials):**
+   - Mở `src/java/util/DBUtil.java` và cấu hình tài khoản SQL Server (`sa`).
+   - Mở `src/java/util/EmailUtil.java` để thêm Email và *App Password* của Google.
+   - Mở `src/java/config/PayOSConfig.java` để điền `CLIENT_ID`, `API_KEY`.
+
+> **4. Chạy dự án:**
+   - Mở dự án bằng NetBeans IDE.
+   - Chọn Server **Apache Tomcat 10+**.
+   - Ấn **Clean and Build** và **Run** (F6) để khởi động hệ thống.
+
+---
+*Dự án được phát triển nhằm mục đích học tập và xây dựng hệ thống thương mại điện tử tiêu chuẩn từ con số 0.*
