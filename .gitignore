@@ -1,0 +1,24 @@
+# Compiled class files
+*.class
+
+# Log file
+*.log
+
+# NetBeans specific files
+build/
+dist/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Backup and temp files
+*~
+*.bak
+*.tmp
+*.temp
+
+# OS specific files
+.DS_Store
+Thumbs.db
